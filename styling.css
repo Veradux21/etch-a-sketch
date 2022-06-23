@@ -1,6 +1,7 @@
 body {
     background: rgb(34, 34, 34);
-    display: flex;
+    max-width: 800px;
+    margin:auto;
 }
 
 div {
@@ -15,6 +16,7 @@ button {
     padding: 15px 32px 15px 32px;
     font-size: large;
     color:white;
+    width:140px;
 }
 
 button:hover {
@@ -25,16 +27,22 @@ button:hover {
 }
 
 .gridHome {
-
+    display:flex;
+    flex-direction: column;
+    height:1000px;
+    width:1000px;
 }
 
 .etch {
     background:black;
     flex: 1;
+    transition-delay: 10s;
+    transition-property:background-color;
 }
 
 .sketch {
     background:white;
-    transition: 1s;
+    transition: 0s;
+    transition-delay:initial;
     flex: 1;
 }
